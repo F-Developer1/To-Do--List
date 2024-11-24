@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-app">
+  <h1>My Tasks</h1>
+  <div class="input-group">
+    <input type="text" id="taskInput" placeholder="Enter a new task..." />
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-app">
+  <h1>My To-Do List</h1>
+
+  <!-- Input Area -->
+  <div class="input-container">
+    <input type="text" id="todo-input" placeholder="Add a new task..." />
+    <button id="add-btn">Add Task</button>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button data-filter="all" class="filter-btn active">All</button>
+    <button data-filter="completed" class="filter-btn">Completed</button>
+    <button data-filter="pending" class="filter-btn">Pending</button>
+  </div>
+
+  <!-- Task List Area -->
+  <ul id="todo-list" class="todo-list"></ul>
+
+  <!-- Clear Completed Tasks Button -->
+  <button id="clear-btn">Clear Completed Tasks</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
